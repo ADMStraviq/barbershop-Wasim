@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import config from '../config'
 
 export default function Footer() {
@@ -14,18 +15,18 @@ export default function Footer() {
 
           {/* Legal links */}
           <div className="flex items-center gap-8">
-            <a
-              href="#impressum"
+            <Link
+              to="/impressum"
               className="text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/35 hover:text-gold transition-colors duration-300"
             >
               Impressum
-            </a>
-            <a
-              href="#datenschutz"
+            </Link>
+            <Link
+              to="/datenschutz"
               className="text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/35 hover:text-gold transition-colors duration-300"
             >
               Datenschutz
-            </a>
+            </Link>
           </div>
 
           {/* Copyright */}

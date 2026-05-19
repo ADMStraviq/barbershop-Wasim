@@ -6,12 +6,14 @@ import Gallery from './components/Gallery'
 import Booking from './components/Booking'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Impressum from './pages/Impressum'
+import Datenschutz from './pages/Datenschutz'
 
 export default function App() {
   return (
     <Routes>
       <Route
-        path="*"
+        path="/"
         element={
           <>
             <Navbar />
@@ -22,6 +24,26 @@ export default function App() {
               <Booking />
               <Contact />
             </main>
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/impressum"
+        element={
+          <>
+            <Navbar />
+            <main><Impressum /></main>
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/datenschutz"
+        element={
+          <>
+            <Navbar />
+            <main><Datenschutz /></main>
             <Footer />
           </>
         }
