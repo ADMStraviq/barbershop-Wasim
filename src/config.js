@@ -62,7 +62,7 @@ const config = {
 
   // bookingEnabled: false  →  Template A (WhatsApp CTA, no booking section)
   // bookingEnabled: true   →  Template B (booking button + embedded calendar)
-  bookingEnabled: false,
+  bookingEnabled: true,
   bookingUrl: "https://cal.com/barbershop/appointment",
 
   primaryColor: "#C9A84C",
