@@ -57,7 +57,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block font-montserrat font-semibold text-xs tracking-[0.25em] uppercase transition-colors duration-300"
-            style={{ background: 'transparent', border: '1px solid #25D366', color: '#25D366', padding: '12px 28px' }}
+            style={{ background: 'transparent', border: '1px solid #C9A84C', color: '#C9A84C', padding: '12px 28px' }}
           >
             Per WhatsApp buchen
           </a>
