@@ -47,15 +47,15 @@ const config = {
       alt: "Barbershop interior",
     },
     {
-      url: "https://images.unsplash.com/photo-1599351016897-34f4bc48c98b?w=800&q=80",
+      url: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80",
       alt: "Barber at work",
     },
     {
-      url: "https://images.unsplash.com/photo-1621605815971-9c5c4cef3d94?w=800&q=80",
+      url: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80",
       alt: "Precision haircut",
     },
     {
-      url: "https://images.unsplash.com/photo-1622286342621-4bd5a7e65b42?w=1200&q=80",
+      url: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=1200&q=80",
       alt: "Barbershop chair",
     },
   ],
