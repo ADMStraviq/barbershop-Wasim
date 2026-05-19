@@ -21,7 +21,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Eyebrow */}
-        <p className="text-xs tracking-[0.45em] uppercase font-montserrat text-gold mb-8">
+        <p className="text-xs tracking-[0.45em] uppercase font-montserrat text-gold mb-8" style={{ whiteSpace: 'nowrap' }}>
           {config.tagline}
         </p>
 
@@ -56,7 +56,8 @@ export default function Hero() {
             href={`https://wa.me/${config.whatsappNumber}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-gold text-dark font-montserrat font-semibold text-xs tracking-[0.25em] uppercase px-10 py-5 hover:bg-off-white transition-colors duration-300"
+            className="inline-block font-montserrat font-semibold text-xs tracking-[0.25em] uppercase transition-colors duration-300"
+            style={{ background: 'transparent', border: '1px solid #25D366', color: '#25D366', padding: '12px 28px' }}
           >
             Per WhatsApp buchen
           </a>
