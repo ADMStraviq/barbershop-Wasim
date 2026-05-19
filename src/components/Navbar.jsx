@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import config from '../config'
 
 const baseLinks = [
@@ -40,12 +41,12 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Logo */}
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        <Link
+          to="/"
           className="font-playfair text-xl font-semibold tracking-wider text-off-white"
         >
           {config.shopName}
-        </button>
+        </Link>
 
         {/* Desktop nav */}
         <ul className="hidden lg:flex items-center gap-10">
