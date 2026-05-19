@@ -47,7 +47,8 @@ export default function Hero() {
         {config.bookingEnabled ? (
           <button
             onClick={() => scrollTo('booking')}
-            className="bg-gold text-dark font-montserrat font-semibold text-xs tracking-[0.25em] uppercase px-10 py-5 hover:bg-off-white transition-colors duration-300"
+            className="font-montserrat font-semibold text-xs tracking-[0.25em] uppercase transition-colors duration-300"
+            style={{ background: 'transparent', border: '1px solid #C9A84C', color: '#C9A84C', padding: '12px 28px' }}
           >
             Termin buchen
           </button>

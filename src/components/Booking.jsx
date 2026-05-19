@@ -17,15 +17,26 @@ export default function Booking() {
         </div>
 
         {/* Embedded calendar */}
-        <div className="border border-white/5 overflow-hidden">
-          <iframe
-            src={config.bookingUrl}
-            title="Booking Calendar"
-            className="w-full h-[700px] lg:h-[800px]"
-            frameBorder="0"
-            scrolling="no"
-          />
-        </div>
+        {config.bookingUrl === 'https://cal.com/barbershop/appointment' ? (
+          <div
+            className="flex items-center justify-center h-[300px]"
+            style={{ border: '1px solid rgba(201,168,76,0.3)' }}
+          >
+            <p className="font-cormorant text-xl text-center" style={{ color: '#C9A84C' }}>
+              Hier wird der Online-Kalender Ihres Kunden eingebettet.
+            </p>
+          </div>
+        ) : (
+          <div className="border border-white/5 overflow-hidden">
+            <iframe
+              src={config.bookingUrl}
+              title="Booking Calendar"
+              className="w-full h-[700px] lg:h-[800px]"
+              frameBorder="0"
+              scrolling="no"
+            />
+          </div>
+        )}
       </div>
     </section>
   )
