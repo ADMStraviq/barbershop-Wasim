@@ -19,7 +19,7 @@ export default function Services() {
           .services-grid { grid-template-columns: 1fr; }
           @media (min-width: 768px) {
             .services-grid { grid-template-columns: repeat(2, 1fr); }
-            .services-grid-last-odd { grid-column: span 2; max-width: 50%; margin: 0 auto; width: 100%; }
+            .services-grid-last-odd { grid-column: 1 / 2; }
           }
         `}</style>
         <div
