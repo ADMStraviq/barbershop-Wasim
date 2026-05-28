@@ -8,9 +8,9 @@ export default function Datenschutz() {
 
         <div className="space-y-12">
           <Block label="Verantwortlicher">
-            <p>[Name des Verantwortlichen]</p>
-            <p>[Adresse]</p>
-            <p>E-Mail: [kontakt@example.com]</p>
+            <p>Wasim Zino</p>
+            <p>Rosenhof 1a, 09111 Chemnitz</p>
+            <p>E-Mail: kontakt@wasim-zino-barbershop.de</p>
           </Block>
 
           <Block label="Datenerfassung">

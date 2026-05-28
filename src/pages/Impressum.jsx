@@ -8,32 +8,32 @@ export default function Impressum() {
 
         <div className="space-y-12">
           <Block label="Angaben gemäß § 5 TMG">
-            <p>[Name des Inhabers oder der Firma]</p>
+            <p>Wasim Zino</p>
           </Block>
 
           <Block label="Name / Firma">
-            <p>[Vollständiger Name oder Firmenname]</p>
+            <p>Wasim Zino Barbershop</p>
           </Block>
 
           <Block label="Adresse">
-            <p>[Straße und Hausnummer]</p>
-            <p>[PLZ Ort]</p>
-            <p>[Land]</p>
+            <p>Rosenhof 1a</p>
+            <p>09111 Chemnitz</p>
+            <p>Deutschland</p>
           </Block>
 
           <Block label="Kontakt">
-            <p>Telefon: [+49 XXX XXXXXXXX]</p>
-            <p>E-Mail: [kontakt@example.com]</p>
+            <p>Telefon: +49-176-43-655-325</p>
+            <p>E-Mail: kontakt@wasim-zino-barbershop.de</p>
           </Block>
 
           <Block label="Umsatzsteuer-ID">
             <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:</p>
-            <p>[DE XXXXXXXXX]</p>
+            <p>wird nachgereicht</p>
           </Block>
 
           <Block label="Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV">
-            <p>[Name der verantwortlichen Person]</p>
-            <p>[Adresse wie oben]</p>
+            <p>Wasim Zino</p>
+            <p>Rosenhof 1a, 09111 Chemnitz</p>
           </Block>
         </div>
       </div>
