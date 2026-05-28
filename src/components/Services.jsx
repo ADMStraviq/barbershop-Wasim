@@ -15,14 +15,23 @@ export default function Services() {
         </div>
 
         {/* Grid */}
+        <style>{`
+          .services-grid { grid-template-columns: 1fr; }
+          @media (min-width: 768px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .services-grid-last-odd { grid-column: span 2; max-width: 50%; margin: 0 auto; width: 100%; }
+          }
+        `}</style>
         <div
-          className="bg-white/5"
-          style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1px', maxWidth: '700px', margin: '0 auto' }}
+          className="services-grid bg-white/5"
+          style={{ display: 'grid', gap: '1px' }}
         >
-          {config.services.map((service, index) => (
+          {config.services.map((service, index) => {
+            const isLastOdd = config.services.length % 2 !== 0 && index === config.services.length - 1
+            return (
             <div
               key={index}
-              className="bg-dark-card p-8 lg:p-10 group hover:bg-[#141414] transition-colors duration-300"
+              className={`bg-dark-card p-8 lg:p-10 group hover:bg-[#141414] transition-colors duration-300${isLastOdd ? ' services-grid-last-odd' : ''}`}
             >
               <span className="block font-playfair text-5xl font-semibold text-gold/15 group-hover:text-gold/35 transition-colors duration-500 mb-6 select-none">
                 {String(index + 1).padStart(2, '0')}
@@ -38,7 +47,8 @@ export default function Services() {
                 {service.price}
               </span>
             </div>
-          ))}
+            )
+          })}
         </div>
 
         {/* Services note */}
