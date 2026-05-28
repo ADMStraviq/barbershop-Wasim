@@ -57,6 +57,12 @@ const config = {
   bookingEnabled: false,
   bookingUrl: "https://cal.com/barbershop/appointment",
 
+  social: {
+    instagram: "https://instagram.com/wasimzino_barbershop",
+    facebook: "https://facebook.com/wasimzinobarbershop",
+    tiktok: "https://tiktok.com/@wasimzinobarbershop",
+  },
+
   primaryColor: "#C9A84C",
 }
 
