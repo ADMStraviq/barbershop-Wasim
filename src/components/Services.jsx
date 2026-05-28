@@ -50,7 +50,7 @@ export default function Services() {
             )
           })}
           {config.services.length % 2 !== 0 && (
-            <div style={{ background: 'transparent', border: 'none' }} />
+            <div className="bg-dark-card" style={{ border: 'none', boxShadow: 'none' }} />
           )}
         </div>
 
