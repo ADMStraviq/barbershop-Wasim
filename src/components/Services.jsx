@@ -15,51 +15,64 @@ export default function Services() {
         </div>
 
         {/* Grid */}
-        <style>{`
-          @media (min-width: 640px) {
-            .services-grid {
-              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            }
-          }
-        `}</style>
-        <div
-          className="services-grid bg-white/5"
-          style={{ display: 'grid', gap: '1px', gridTemplateColumns: 'repeat(1, 1fr)' }}
-        >
-          {config.services.map((service, index) => {
-            const isLastOfFive = config.services.length === 5 && index === 4
-            return (
+        {(() => {
+          const services = config.services
+          const isFive = services.length === 5
+          const firstRow = isFive ? services.slice(0, 3) : services
+          const secondRow = isFive ? services.slice(3) : []
+
+          const renderCard = (service, index) => (
             <div
               key={index}
               className="bg-dark-card p-8 lg:p-10 group hover:bg-[#141414] transition-colors duration-300"
-              style={isLastOfFive ? { gridColumn: '1 / -1', maxWidth: '300px', margin: '0 auto', width: '100%' } : {}}
             >
-              {/* Number */}
               <span className="block font-playfair text-5xl font-semibold text-gold/15 group-hover:text-gold/35 transition-colors duration-500 mb-6 select-none">
                 {String(index + 1).padStart(2, '0')}
               </span>
-
-              {/* Name */}
               <h3 className="font-playfair text-xl font-semibold text-off-white mb-3">
                 {service.name}
               </h3>
-
-              {/* Rule */}
               <div className="w-8 h-px bg-gold mb-5" />
-
-              {/* Description */}
               <p className="font-montserrat text-sm text-off-white/50 leading-relaxed mb-8">
                 {service.description}
               </p>
-
-              {/* Price */}
               <span className="font-cormorant text-2xl tracking-wide text-gold">
                 {service.price}
               </span>
             </div>
-            )
-          })}
-        </div>
+          )
+
+          return (
+            <>
+              <style>{`
+                @media (max-width: 639px) {
+                  .services-row-1 { grid-template-columns: repeat(1, 1fr) !important; }
+                  .services-row-2 { flex-direction: column !important; }
+                  .services-row-2 > * { width: 100% !important; }
+                }
+              `}</style>
+              <div className="bg-white/5" style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
+                {/* Row 1 */}
+                <div
+                  className="services-row-1"
+                  style={{ display: 'grid', gridTemplateColumns: isFive ? 'repeat(3, 1fr)' : 'repeat(1, 1fr)', gap: '1px' }}
+                >
+                  {firstRow.map((service, index) => renderCard(service, index))}
+                </div>
+                {/* Row 2 — centered */}
+                {secondRow.length > 0 && (
+                  <div className="services-row-2" style={{ display: 'flex', justifyContent: 'center', gap: '1px' }}>
+                    {secondRow.map((service, index) =>
+                      <div key={index} style={{ width: 'calc(33.333% - 1px)' }}>
+                        {renderCard(service, index + firstRow.length)}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </>
+          )
+        })()}
 
         {/* Services note */}
         {config.servicesNote && (
