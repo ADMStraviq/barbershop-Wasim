@@ -15,7 +15,25 @@ export default function Services() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
+        <style>{`
+          @media (min-width: 640px) {
+            .services-grid {
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            .services-grid > *:last-child:not(:nth-child(4n)) {
+              grid-column: 1 / -1;
+            }
+          }
+          @media (min-width: 1024px) {
+            .services-grid > *:last-child:not(:nth-child(4n)) {
+              grid-column: auto;
+            }
+          }
+        `}</style>
+        <div
+          className="services-grid bg-white/5"
+          style={{ display: 'grid', gap: '1px', gridTemplateColumns: 'repeat(1, 1fr)' }}
+        >
           {config.services.map((service, index) => (
             <div
               key={index}
