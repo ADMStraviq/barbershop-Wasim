@@ -46,6 +46,14 @@ export default function Services() {
             </div>
           ))}
         </div>
+
+        {/* Services note */}
+        {config.servicesNote && (
+          <p style={{ color: 'rgba(245,240,232,0.6)', maxWidth: '700px', margin: '2.5rem auto 0' }}
+            className="font-montserrat text-sm leading-relaxed text-center italic">
+            {config.servicesNote}
+          </p>
+        )}
       </div>
     </section>
   )

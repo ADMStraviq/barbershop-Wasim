@@ -16,30 +16,33 @@ const config = {
   ],
   services: [
     {
-      name: "Classic Cut",
+      name: "Haarschnitt (Meister)",
       price: "€ 35",
-      description:
-        "Traditioneller Herrenhaarschnitt inkl. Waschen, Schneiden & Stylen nach Wunsch.",
+      description: "Professioneller Haarschnitt beim Friseurmeister.",
     },
     {
-      name: "Beard Shaping",
-      price: "€ 25",
-      description:
-        "Präzise Bartpflege mit heißem Tuch, Rasiermesser-Kontur & Bartwachs-Finish.",
+      name: "Bart (Meister)",
+      price: "€ 30",
+      description: "Präzises Bart-Styling und -pflege beim Friseurmeister.",
     },
     {
-      name: "Cut & Shave",
-      price: "€ 55",
-      description:
-        "Komplettpaket: Haarschnitt, klassische Nassrasur & Gesichtspflege inklusive.",
+      name: "Haarschnitt (Mitarbeiter)",
+      price: "€ 20 – 25",
+      description: "Klassischer Haarschnitt durch unser erfahrenes Team.",
     },
     {
-      name: "Kids Cut",
-      price: "€ 22",
-      description:
-        "Haarschnitt für Kinder bis 12 Jahre in entspannter, kinderfreundlicher Atmosphäre.",
+      name: "Bart (Mitarbeiter)",
+      price: "€ 15",
+      description: "Bart formen und pflegen durch unser Team.",
+    },
+    {
+      name: "Kombi-Paket",
+      price: "€ 35",
+      description: "Haarschnitt, Bart und Waxing – das komplette Paket beim Mitarbeiter.",
     },
   ],
+  servicesNote:
+    "Wir bieten außerdem Farbe, Dauerwelle, Blondierungen, Strähnchen – alles, was mit Haaren zu tun hat. Wir können alles umsetzen, was dein Haar braucht. Zusätzlich haben wir hochwertige Produkte zum Verkauf – ideal für den Alltag oder besondere Looks. Außerdem arbeiten wir mit Fadentechniken, um Augenbrauen zu formen und Gesichtshaare zu entfernen. Wir bieten alles, was dein Haar perfekt macht!",
   galleryImages: [
     { url: "/images/IMG_8483.jpg", alt: "Wasim Zino Barbershop" },
     { url: "/images/IMG_8484.jpg", alt: "Wasim Zino Barbershop" },
