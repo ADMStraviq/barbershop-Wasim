@@ -41,22 +41,12 @@ const config = {
     },
   ],
   galleryImages: [
-    {
-      url: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=80",
-      alt: "Barbershop interior",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80",
-      alt: "Barber at work",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80",
-      alt: "Precision haircut",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=1200&q=80",
-      alt: "Barbershop chair",
-    },
+    { url: "/images/IMG_8483.jpg", alt: "Wasim Zino Barbershop" },
+    { url: "/images/IMG_8484.jpg", alt: "Wasim Zino Barbershop" },
+    { url: "/images/IMG_8485.jpg", alt: "Wasim Zino Barbershop" },
+    { url: "/images/IMG_8486.jpg", alt: "Wasim Zino Barbershop" },
+    { url: "/images/IMG_8487.jpg", alt: "Wasim Zino Barbershop" },
+    { url: "/images/IMG_8488.jpg", alt: "Wasim Zino Barbershop" },
   ],
 
   // bookingEnabled: false  →  Template A (WhatsApp CTA, no booking section)
