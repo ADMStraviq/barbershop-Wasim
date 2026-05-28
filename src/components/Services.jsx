@@ -20,24 +20,19 @@ export default function Services() {
             .services-grid {
               grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
-            .services-grid > *:last-child:not(:nth-child(4n)) {
-              grid-column: 1 / -1;
-            }
-          }
-          @media (min-width: 1024px) {
-            .services-grid > *:last-child:not(:nth-child(4n)) {
-              grid-column: auto;
-            }
           }
         `}</style>
         <div
           className="services-grid bg-white/5"
           style={{ display: 'grid', gap: '1px', gridTemplateColumns: 'repeat(1, 1fr)' }}
         >
-          {config.services.map((service, index) => (
+          {config.services.map((service, index) => {
+            const isLastOfFive = config.services.length === 5 && index === 4
+            return (
             <div
               key={index}
               className="bg-dark-card p-8 lg:p-10 group hover:bg-[#141414] transition-colors duration-300"
+              style={isLastOfFive ? { gridColumn: '1 / -1', maxWidth: '300px', margin: '0 auto', width: '100%' } : {}}
             >
               {/* Number */}
               <span className="block font-playfair text-5xl font-semibold text-gold/15 group-hover:text-gold/35 transition-colors duration-500 mb-6 select-none">
@@ -62,7 +57,8 @@ export default function Services() {
                 {service.price}
               </span>
             </div>
-          ))}
+            )
+          })}
         </div>
 
         {/* Services note */}
