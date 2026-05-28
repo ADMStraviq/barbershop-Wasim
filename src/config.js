@@ -1,18 +1,17 @@
 const config = {
-  shopName: "Gentleman's Cut",
-  tagline: "Premium Barbershop · Est. 2018",
-  phone: "+49 30 123 456 78",
-  whatsappNumber: "4930123456789",
-  address: "Kurfürstendamm 42",
-  city: "Berlin",
-  zipCode: "10719",
+  shopName: "Wasim Zino Barbershop",
+  tagline: "Premium Barbershop · Chemnitz",
+  phone: "+49 176 43655325",
+  whatsappNumber: "4917643655325",
+  address: "Rosenhof 1a",
+  city: "Chemnitz",
+  zipCode: "09111",
   heroImageUrl:
     "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1800&q=85",
   googleMapsEmbedUrl:
-    "https://maps.google.com/maps?q=Kurfürstendamm+42,+10719+Berlin,+Germany&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    "https://maps.google.com/maps?q=Rosenhof+1a,+09111+Chemnitz&t=&z=15&ie=UTF8&iwloc=&output=embed",
   openingHours: [
-    { day: "Montag – Freitag", hours: "09:00 – 20:00" },
-    { day: "Samstag", hours: "09:00 – 18:00" },
+    { day: "Montag – Samstag", hours: "10:00 – 20:00" },
     { day: "Sonntag", hours: "Geschlossen" },
   ],
   services: [
@@ -62,7 +61,7 @@ const config = {
 
   // bookingEnabled: false  →  Template A (WhatsApp CTA, no booking section)
   // bookingEnabled: true   →  Template B (booking button + embedded calendar)
-  bookingEnabled: true,
+  bookingEnabled: false,
   bookingUrl: "https://cal.com/barbershop/appointment",
 
   primaryColor: "#C9A84C",

@@ -41,11 +41,8 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link
-          to="/"
-          className="font-playfair text-xl font-semibold tracking-wider text-off-white"
-        >
-          {config.shopName}
+        <Link to="/">
+          <img src="/images/logo.png" alt="Wasim Zino Barbershop" style={{ maxHeight: '48px' }} />
         </Link>
 
         {/* Desktop nav */}
