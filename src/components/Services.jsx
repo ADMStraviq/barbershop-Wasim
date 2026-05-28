@@ -49,6 +49,9 @@ export default function Services() {
             </div>
             )
           })}
+          {config.services.length % 2 !== 0 && (
+            <div style={{ background: 'transparent', border: 'none' }} />
+          )}
         </div>
 
         {/* Services note */}
