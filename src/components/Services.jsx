@@ -15,13 +15,11 @@ export default function Services() {
         </div>
 
         {/* Grid */}
-        {(() => {
-          const services = config.services
-          const isFive = services.length === 5
-          const firstRow = isFive ? services.slice(0, 3) : services
-          const secondRow = isFive ? services.slice(3) : []
-
-          const renderCard = (service, index) => (
+        <div
+          className="bg-white/5"
+          style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1px', maxWidth: '700px', margin: '0 auto' }}
+        >
+          {config.services.map((service, index) => (
             <div
               key={index}
               className="bg-dark-card p-8 lg:p-10 group hover:bg-[#141414] transition-colors duration-300"
@@ -40,39 +38,8 @@ export default function Services() {
                 {service.price}
               </span>
             </div>
-          )
-
-          return (
-            <>
-              <style>{`
-                @media (max-width: 639px) {
-                  .services-row-1 { grid-template-columns: repeat(1, 1fr) !important; }
-                  .services-row-2 { flex-direction: column !important; }
-                  .services-row-2 > * { width: 100% !important; }
-                }
-              `}</style>
-              <div className="bg-white/5" style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
-                {/* Row 1 */}
-                <div
-                  className="services-row-1"
-                  style={{ display: 'grid', gridTemplateColumns: isFive ? 'repeat(3, 1fr)' : 'repeat(1, 1fr)', gap: '1px' }}
-                >
-                  {firstRow.map((service, index) => renderCard(service, index))}
-                </div>
-                {/* Row 2 — centered */}
-                {secondRow.length > 0 && (
-                  <div className="services-row-2" style={{ display: 'flex', justifyContent: 'center', gap: '1px' }}>
-                    {secondRow.map((service, index) =>
-                      <div key={index} style={{ width: 'calc(33.333% - 1px)' }}>
-                        {renderCard(service, index + firstRow.length)}
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            </>
-          )
-        })()}
+          ))}
+        </div>
 
         {/* Services note */}
         {config.servicesNote && (
