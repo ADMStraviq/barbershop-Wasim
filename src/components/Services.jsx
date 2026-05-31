@@ -14,6 +14,19 @@ export default function Services() {
           </h2>
         </div>
 
+        {/* Subheading */}
+        <p style={{
+          fontFamily: "'Cormorant Garamond', serif",
+          fontStyle: 'italic',
+          fontSize: '16px',
+          color: 'rgba(245,240,232,0.6)',
+          textAlign: 'center',
+          maxWidth: '600px',
+          margin: '0 auto 2.5rem auto',
+        }}>
+          Als Friseurmeister bin ich täglich persönlich im Salon vor Ort und kümmere mich selbst um meine Kunden.
+        </p>
+
         {/* Grid */}
         <style>{`
           .services-grid { grid-template-columns: 1fr; }
