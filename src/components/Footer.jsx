@@ -30,9 +30,22 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-xs font-montserrat text-off-white/25">
-            &copy; {year} {config.shopName}
-          </p>
+          <div>
+            <p className="text-xs font-montserrat text-off-white/25">
+              &copy; {year} {config.shopName}
+            </p>
+            <p style={{ fontSize: '11px', color: 'rgba(245,240,232,0.25)', textAlign: 'center', marginTop: '4px' }}>
+              Website erstellt von{' '}
+              <a
+                href="https://straviq.de"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: 'rgba(245,240,232,0.25)', textDecoration: 'none' }}
+              >
+                STRAVIQ
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
