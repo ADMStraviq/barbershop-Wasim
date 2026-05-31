@@ -19,7 +19,6 @@ export default function Datenschutz() {
               notwendigen Umfang. Es werden keine Daten ohne Ihre ausdrückliche Einwilligung
               an Dritte weitergegeben.
             </p>
-            <p>[Hier weitere Details zur Datenerfassung ergänzen.]</p>
           </Block>
 
           <Block label="Google Maps">
@@ -41,7 +40,6 @@ export default function Datenschutz() {
               angeboten. Wenn Sie den Link anklicken, werden Sie zu WhatsApp weitergeleitet.
               Dabei können Daten an WhatsApp übertragen werden.
             </p>
-            <p>[Hier weitere Details zur WhatsApp-Nutzung ergänzen.]</p>
           </Block>
 
           <Block label="Hosting (Vercel)">
