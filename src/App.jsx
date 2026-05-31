@@ -8,9 +8,12 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Impressum from './pages/Impressum'
 import Datenschutz from './pages/Datenschutz'
+import CookieBanner from './components/CookieBanner'
 
 export default function App() {
   return (
+    <>
+    <CookieBanner />
     <Routes>
       <Route
         path="/"
@@ -49,5 +52,6 @@ export default function App() {
         }
       />
     </Routes>
+    </>
   )
 }

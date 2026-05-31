@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import config from '../config'
 
 function SocialButton({ href, label, style, children, target = '_blank' }) {
@@ -75,7 +76,23 @@ function PhoneIcon() {
   )
 }
 
+function useConsentState() {
+  const [consent, setConsent] = useState(() => localStorage.getItem('cookieConsent'))
+
+  useEffect(() => {
+    function sync() {
+      setConsent(localStorage.getItem('cookieConsent'))
+    }
+    window.addEventListener('cookieConsentChange', sync)
+    return () => window.removeEventListener('cookieConsentChange', sync)
+  }, [])
+
+  return consent
+}
+
 export default function Contact() {
+  const consent = useConsentState()
+
   return (
     <section id="contact" className="py-24 lg:py-32 bg-dark">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -202,15 +219,35 @@ export default function Contact() {
 
           {/* Right: Google Maps */}
           <div className="h-[420px] lg:h-auto min-h-[420px] border border-white/5 overflow-hidden">
-            <iframe
-              src={config.googleMapsEmbedUrl}
-              title="Google Maps"
-              className="w-full h-full"
-              frameBorder="0"
-              scrolling="no"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            {consent === 'accepted' ? (
+              <iframe
+                src={config.googleMapsEmbedUrl}
+                title="Google Maps"
+                className="w-full h-full"
+                frameBorder="0"
+                scrolling="no"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            ) : (
+              <div
+                className="w-full h-full flex items-center justify-center"
+                style={{ background: '#111111' }}
+              >
+                <p
+                  className="text-center font-montserrat"
+                  style={{
+                    color: 'rgba(245,241,232,0.4)',
+                    fontSize: '13px',
+                    lineHeight: '1.7',
+                    maxWidth: '260px',
+                  }}
+                >
+                  Google Maps ist deaktiviert. Bitte akzeptiere die Cookies um die Karte
+                  anzuzeigen.
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
