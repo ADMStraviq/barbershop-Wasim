@@ -56,10 +56,12 @@ const config = {
   bookingEnabled: false,
   bookingUrl: "https://cal.com/barbershop/appointment",
 
+  email: "kontakt@wasim-zino-barbershop.de",
+
   social: {
-    instagram: "https://instagram.com/wasimzino_barbershop",
-    facebook: "https://facebook.com/wasimzinobarbershop",
-    tiktok: "https://tiktok.com/@wasimzinobarbershop",
+    instagram: "https://www.instagram.com/barbershopwasimzino/",
+    facebook: "https://www.facebook.com/people/Wasim-Zino-Barbershop/100063526483738/",
+    tiktok: "https://www.tiktok.com/@wz0102?_t=ZN-90lTUYbuY58&_r=1",
   },
 
   primaryColor: "#C9A84C",

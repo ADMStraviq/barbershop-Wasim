@@ -176,12 +176,13 @@ export default function Contact() {
               <SocialButton
                 href={`https://wa.me/${config.whatsappNumber}`}
                 label="WhatsApp"
+                target="_self"
                 style={{ background: '#25D366' }}
               >
                 <WhatsAppIcon />
               </SocialButton>
               <SocialButton
-                href={`mailto:${config.email || ''}`}
+                href={`mailto:${config.email}`}
                 label="E-Mail"
                 target="_self"
                 style={{ background: '#C9A84C', color: '#0A0A0A' }}
@@ -189,7 +190,7 @@ export default function Contact() {
                 <EmailIcon />
               </SocialButton>
               <SocialButton
-                href={`tel:${config.phone}`}
+                href="tel:+4917643655325"
                 label="Telefon"
                 target="_self"
                 style={{ background: '#333333' }}
