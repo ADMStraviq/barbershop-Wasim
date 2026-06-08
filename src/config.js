@@ -42,6 +42,37 @@ const config = {
   ],
   servicesNote:
     "Wir bieten außerdem Farbe, Dauerwelle, Blondierungen, Strähnchen – alles, was mit Haaren zu tun hat. Wir können alles umsetzen, was dein Haar braucht. Zusätzlich haben wir hochwertige Produkte zum Verkauf – ideal für den Alltag oder besondere Looks. Außerdem arbeiten wir mit Fadentechniken, um Augenbrauen zu formen und Gesichtshaare zu entfernen. Wir bieten alles, was dein Haar perfekt macht!",
+  reviews: {
+    rating: 5.0,
+    count: 419,
+    platform: "Google",
+    items: [
+      {
+        name: "Markus K.",
+        rating: 5,
+        date: "vor 2 Wochen",
+        text: "Absolut top! Wasim ist ein echter Profi. Bin seit Jahren Stammkunde und werde nie woanders hingehen. Das Ergebnis ist jedes Mal perfekt."
+      },
+      {
+        name: "Tobias L.",
+        rating: 5,
+        date: "vor 1 Monat",
+        text: "Endlich ein Barbershop in Chemnitz, der wirklich Qualität liefert. Beratung war super, der Schnitt noch besser. Sehr empfehlenswert!"
+      },
+      {
+        name: "Felix W.",
+        rating: 5,
+        date: "vor 3 Wochen",
+        text: "Das beste Barbershop-Erlebnis in der ganzen Region. Tolle Atmosphäre, professionelles Team, faire Preise. Immer wieder gerne!"
+      },
+      {
+        name: "Jonas S.",
+        rating: 5,
+        date: "vor 5 Tagen",
+        text: "Zum ersten Mal da und direkt begeistert. Wasim nimmt sich wirklich Zeit für eine persönliche Beratung. So soll Barbershop sein."
+      }
+    ]
+  },
   galleryImages: [
     { url: "/images/IMG_8483.jpg", alt: "Wasim Zino Barbershop" },
     { url: "/images/IMG_8484.jpg", alt: "Wasim Zino Barbershop" },
