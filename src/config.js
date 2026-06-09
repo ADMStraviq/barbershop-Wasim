@@ -84,8 +84,8 @@ const config = {
 
   // bookingEnabled: false  →  Template A (WhatsApp CTA, no booking section)
   // bookingEnabled: true   →  Template B (booking button + embedded calendar)
-  bookingEnabled: false,
-  bookingUrl: "https://cal.com/barbershop/appointment",
+  bookingEnabled: true,
+  bookingUrl: "https://cal.com/wasim-zino/termin",
 
   email: "kontakt@wasim-zino-barbershop.de",
 
