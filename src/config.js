@@ -26,13 +26,18 @@ const config = {
     },
     {
       name: "Haarschnitt (Mitarbeiter)",
-      price: "€ 20 – 25",
+      price: "€ 30",
       description: "Klassischer Haarschnitt durch unser erfahrenes Team.",
     },
     {
       name: "Bart (Mitarbeiter)",
       price: "€ 15",
       description: "Bart formen und pflegen durch unser Team.",
+    },
+    {
+      name: "Kinder Haarschnitt",
+      price: "€ 25",
+      description: "Haarschnitt für Kinder bis 12 Jahre in entspannter, kinderfreundlicher Atmosphäre.",
     },
     {
       name: "Kombi-Paket",
