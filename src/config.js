@@ -62,28 +62,28 @@ const config = {
     platform: "Google",
     items: [
       {
-        name: "Markus K.",
+        name: "Tarek",
         rating: 5,
-        date: "vor 2 Wochen",
-        text: "Absolut top! Wasim ist ein echter Profi. Bin seit Jahren Stammkunde und werde nie woanders hingehen. Das Ergebnis ist jedes Mal perfekt."
+        date: "vor 8 Monaten",
+        text: "Absolut empfehlenswert! Wasim ist nicht nur extrem präzise und professionell, sondern sorgt auch dafür, dass man sich sofort wohlfühlt. Jeder Schnitt sitzt perfekt, die Beratung ist top, und das Ergebnis übertrifft jedes Mal meine Erwartungen. Hier merkt man echte Leidenschaft fürs Handwerk – fünf Sterne sind einfach nur gerechtfertigt!"
       },
       {
-        name: "Tobias L.",
+        name: "Lea Kalke",
         rating: 5,
-        date: "vor 1 Monat",
-        text: "Endlich ein Barbershop in Chemnitz, der wirklich Qualität liefert. Beratung war super, der Schnitt noch besser. Sehr empfehlenswert!"
+        date: "vor einem Jahr",
+        text: "Sehr empfehlenswert! Auch für mich als Frau eine super Erfahrung. Hier wird jeder herzlich empfangen. Das Personal ist extrem freundlich, die Arbeit schnell und präzise. Wasim weiß genau, was er tut, jeder Schnitt sitzt perfekt. Ich bin sehr zufrieden und überzeugt!"
       },
       {
-        name: "Felix W.",
+        name: "Jannis Quaiser",
         rating: 5,
-        date: "vor 3 Wochen",
-        text: "Das beste Barbershop-Erlebnis in der ganzen Region. Tolle Atmosphäre, professionelles Team, faire Preise. Immer wieder gerne!"
+        date: "vor 9 Monaten",
+        text: "Bester Barbershop in Chemnitz. Abbas nimmt sich immer Zeit und schneidet die Haare mit Liebe zum Detail. Es gibt Getränke und es wird auf den Service gegenüber den Kunden geachtet. Top Leistung."
       },
       {
-        name: "Jonas S.",
+        name: "Ferenc Brendel",
         rating: 5,
-        date: "vor 5 Tagen",
-        text: "Zum ersten Mal da und direkt begeistert. Wasim nimmt sich wirklich Zeit für eine persönliche Beratung. So soll Barbershop sein."
+        date: "vor einem Jahr",
+        text: "Dieser Barbershop ist nur zu empfehlen. Ich war jetzt schon öfter hier und war jedes Mal sehr zufrieden mit dem Ergebnis. Es wird sich viel Zeit für die Wünsche genommen und man fühlt sich direkt sehr wohl."
       }
     ]
   },
