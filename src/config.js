@@ -13,40 +13,49 @@ const config = {
     { day: "Montag – Samstag", hours: "10:00 – 20:00" },
     { day: "Sonntag", hours: "Geschlossen" },
   ],
-  services: [
+  serviceCategories: [
     {
-      name: "Haarschnitt (Meister)",
-      price: "€ 35",
-      description: "Professioneller Haarschnitt beim Friseurmeister.",
+      category: "Herren",
+      items: [
+        { name: "Herrenhaarschnitt (Meister)", price: "€ 35" },
+        { name: "Herrenhaarschnitt (Mitarbeiter)", price: "€ 30" },
+        { name: "Bart (Meister)", price: "€ 30" },
+        { name: "Bart (Mitarbeiter)", price: "€ 15" },
+        { name: "Kombi-Paket (Schnitt + Bart + Waxing)", price: "€ 45" },
+      ],
     },
     {
-      name: "Bart (Meister)",
-      price: "€ 30",
-      description: "Präzises Bart-Styling und -pflege beim Friseurmeister.",
+      category: "Damen",
+      items: [
+        { name: "Kurzhaar", price: "€ 45–50" },
+        { name: "Mittellang", price: "€ 55–60" },
+        { name: "Langhaar", price: "€ 65" },
+        { name: "Ansatzfarbe", price: "€ 45–55" },
+        { name: "Globalfarbe (komplett)", price: "€ 60–75" },
+        { name: "Tönung / Graureduzierung", price: "€ 25–35" },
+        { name: "Permanente Farbe", price: "€ 45–60" },
+        { name: "Blondierung Ansatz", price: "€ 55–85" },
+        { name: "Blondierung komplett", price: "€ 80–150" },
+        { name: "Strähnen Oberkopf", price: "€ 35–60" },
+        { name: "Strähnen ganzer Kopf", price: "€ 70–120" },
+        { name: "Dauerwelle", price: "€ 50–70" },
+      ],
     },
     {
-      name: "Haarschnitt (Mitarbeiter)",
-      price: "€ 30",
-      description: "Klassischer Haarschnitt durch unser erfahrenes Team.",
+      category: "Kinder",
+      items: [
+        { name: "Haarschnitt bis 12 Jahre", price: "€ 25" },
+      ],
     },
     {
-      name: "Bart (Mitarbeiter)",
-      price: "€ 15",
-      description: "Bart formen und pflegen durch unser Team.",
-    },
-    {
-      name: "Kinder Haarschnitt",
-      price: "€ 25",
-      description: "Haarschnitt für Kinder bis 12 Jahre in entspannter, kinderfreundlicher Atmosphäre.",
-    },
-    {
-      name: "Kombi-Paket",
-      price: "€ 35",
-      description: "Haarschnitt, Bart und Waxing – das komplette Paket beim Mitarbeiter.",
+      category: "Kosmetik",
+      items: [
+        { name: "Augenbrauen zupfen", price: "€ 10" },
+        { name: "Gesichtswachs", price: "€ 10" },
+      ],
     },
   ],
-  servicesNote:
-    "Wir bieten außerdem Farbe, Dauerwelle, Blondierungen, Strähnchen – alles, was mit Haaren zu tun hat. Wir können alles umsetzen, was dein Haar braucht. Zusätzlich haben wir hochwertige Produkte zum Verkauf – ideal für den Alltag oder besondere Looks. Außerdem arbeiten wir mit Fadentechniken, um Augenbrauen zu formen und Gesichtshaare zu entfernen. Wir bieten alles, was dein Haar perfekt macht!",
+  servicesNote: "Alle Preise können je nach Haarlänge, Haarmenge und Aufwand variieren.",
   reviews: {
     rating: 5.0,
     count: 419,

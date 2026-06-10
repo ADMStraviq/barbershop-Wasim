@@ -22,55 +22,81 @@ export default function Services() {
           color: 'rgba(245,240,232,0.6)',
           textAlign: 'center',
           maxWidth: '600px',
-          margin: '0 auto 2.5rem auto',
+          margin: '0 auto 3rem auto',
         }}>
           Als Friseurmeister bin ich täglich persönlich im Salon vor Ort und kümmere mich selbst um meine Kunden.
         </p>
 
-        {/* Grid */}
+        {/* Categories grid */}
         <style>{`
-          .services-grid { grid-template-columns: 1fr; }
+          .price-categories { grid-template-columns: 1fr; }
           @media (min-width: 768px) {
-            .services-grid { grid-template-columns: repeat(2, 1fr); }
-            .services-grid-last-odd { grid-column: 1 / 2; }
+            .price-categories { grid-template-columns: repeat(2, 1fr); }
           }
         `}</style>
-        <div
-          className="services-grid bg-white/5"
-          style={{ display: 'grid', gap: '1px' }}
-        >
-          {config.services.map((service, index) => {
-            const isLastOdd = config.services.length % 2 !== 0 && index === config.services.length - 1
-            return (
-            <div
-              key={index}
-              className={`bg-dark-card p-8 lg:p-10 group hover:bg-[#141414] transition-colors duration-300${isLastOdd ? ' services-grid-last-odd' : ''}`}
-            >
-              <span className="block font-playfair text-5xl font-semibold text-gold/15 group-hover:text-gold/35 transition-colors duration-500 mb-6 select-none">
-                {String(index + 1).padStart(2, '0')}
-              </span>
-              <h3 className="font-playfair text-xl font-semibold text-off-white mb-3">
-                {service.name}
-              </h3>
-              <div className="w-8 h-px bg-gold mb-5" />
-              <p className="font-montserrat text-sm text-off-white/50 leading-relaxed mb-8">
-                {service.description}
+        <div className="price-categories" style={{ display: 'grid', gap: '2.5rem' }}>
+          {config.serviceCategories.map((cat) => (
+            <div key={cat.category}>
+              {/* Category title */}
+              <p style={{
+                fontSize: '11px',
+                fontFamily: "'Montserrat', sans-serif",
+                fontWeight: '600',
+                letterSpacing: '0.3em',
+                textTransform: 'uppercase',
+                color: '#C9A84C',
+                borderBottom: '1px solid rgba(201,168,76,0.2)',
+                paddingBottom: '0.6rem',
+                marginBottom: '1rem',
+              }}>
+                {cat.category}
               </p>
-              <span className="font-cormorant text-2xl tracking-wide text-gold">
-                {service.price}
-              </span>
+
+              {/* Items */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.55rem' }}>
+                {cat.items.map((item) => (
+                  <div key={item.name} style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem' }}>
+                    <span style={{
+                      fontSize: '14px',
+                      fontFamily: "'Montserrat', sans-serif",
+                      color: '#F5F0E8',
+                      whiteSpace: 'nowrap',
+                    }}>
+                      {item.name}
+                    </span>
+                    <span style={{
+                      flex: 1,
+                      borderBottom: '1px dotted rgba(245,240,232,0.2)',
+                      marginBottom: '3px',
+                    }} />
+                    <span style={{
+                      fontSize: '14px',
+                      fontFamily: "'Montserrat', sans-serif",
+                      fontWeight: '500',
+                      color: '#C9A84C',
+                      whiteSpace: 'nowrap',
+                    }}>
+                      {item.price}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
-            )
-          })}
-          {config.services.length % 2 !== 0 && (
-            <div className="bg-dark-card" style={{ border: 'none', boxShadow: 'none' }} />
-          )}
+          ))}
         </div>
 
         {/* Services note */}
         {config.servicesNote && (
-          <p style={{ color: 'rgba(245,240,232,0.6)', maxWidth: '700px', margin: '2.5rem auto 0' }}
-            className="font-montserrat text-sm leading-relaxed text-center italic">
+          <p style={{
+            color: '#C9A84C',
+            maxWidth: '600px',
+            margin: '3rem auto 0',
+            fontSize: '13px',
+            fontFamily: "'Montserrat', sans-serif",
+            fontStyle: 'italic',
+            textAlign: 'center',
+            opacity: 0.8,
+          }}>
             {config.servicesNote}
           </p>
         )}
