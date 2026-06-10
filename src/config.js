@@ -20,8 +20,8 @@ const config = {
         { name: "Herrenhaarschnitt (Meister)", price: "€ 35" },
         { name: "Herrenhaarschnitt (Mitarbeiter)", price: "€ 30" },
         { name: "Bart (Meister)", price: "€ 30" },
-        { name: "Bart (Mitarbeiter)", price: "€ 15" },
-        { name: "Kombi-Paket (Schnitt + Bart + Waxing)", price: "€ 45" },
+        { name: "Bart (Mitarbeiter)", price: "€ 25" },
+        { name: "Kombi-Paket (Schnitt + Bart + Waxing)", price: "€ 50" },
       ],
     },
     {
