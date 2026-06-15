@@ -57,6 +57,14 @@ export default function Navbar() {
               </button>
             </li>
           ))}
+          <li>
+            <Link
+              to="/termin"
+              className="border border-gold text-gold text-xs tracking-[0.2em] uppercase font-montserrat px-5 py-2.5 hover:bg-gold hover:text-dark transition-all duration-300"
+            >
+              Termin buchen
+            </Link>
+          </li>
         </ul>
 
         {/* Desktop CTA */}
@@ -137,6 +145,15 @@ export default function Navbar() {
                 WhatsApp
               </a>
             )}
+          </li>
+          <li>
+            <Link
+              to="/termin"
+              onClick={() => setMenuOpen(false)}
+              className="inline-block border border-gold text-gold text-xs tracking-[0.2em] uppercase font-montserrat px-7 py-3 hover:bg-gold hover:text-dark transition-all duration-300"
+            >
+              Termin buchen
+            </Link>
           </li>
         </ul>
       </div>

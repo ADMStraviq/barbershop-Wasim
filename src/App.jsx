@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Impressum from './pages/Impressum'
 import Datenschutz from './pages/Datenschutz'
+import Termin from './pages/Termin'
 import CookieBanner from './components/CookieBanner'
 
 export default function App() {
@@ -49,6 +50,16 @@ export default function App() {
           <>
             <Navbar />
             <main><Datenschutz /></main>
+            <Footer />
+          </>
+        }
+      />
+      <Route
+        path="/termin"
+        element={
+          <>
+            <Navbar />
+            <main><Termin /></main>
             <Footer />
           </>
         }

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import config from '../config'
 
 function SocialButton({ href, label, style, children, target = '_blank' }) {
@@ -155,6 +156,14 @@ export default function Contact() {
                 ))}
               </ul>
             </div>
+
+            {/* Online booking CTA */}
+            <Link
+              to="/termin"
+              className="inline-flex items-center gap-3 bg-gold text-dark font-montserrat text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-gold/80 transition-all duration-300 w-fit"
+            >
+              Online Termin buchen
+            </Link>
 
             {/* WhatsApp CTA */}
             <a
