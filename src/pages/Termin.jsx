@@ -5,33 +5,34 @@ const APP_SRC     = 'https://d2skjte8udjqxw.cloudfront.net/widget/production/2/a
 
 export default function Termin() {
   useEffect(() => {
+    let active = true
+
     const container = document.getElementById('planity-container')
     window.planity = {
       key: '-N5fShj6sQjzCv38VtpB',
       primaryColor: '#C9A84C',
       options: { countryCode: 'DE' },
       container,
-      accountContainer: container,
-      appointmentContainer: container,
-      giftVoucherContainer: container,
-      onlineShopContainer: container,
     }
 
     const polyfill = document.createElement('script')
     polyfill.src = POLYFILL_SRC
-    polyfill.async = true
 
-    const app = document.createElement('script')
-    app.src = APP_SRC
-    app.async = true
+    polyfill.onload = () => {
+      if (!active) return
+      const app = document.createElement('script')
+      app.src = APP_SRC
+      document.body.appendChild(app)
+      polyfill._appScript = app
+    }
 
-    // Load app only after polyfills are ready
-    polyfill.onload = () => document.body.appendChild(app)
     document.body.appendChild(polyfill)
 
     return () => {
+      active = false
       if (document.body.contains(polyfill)) document.body.removeChild(polyfill)
-      if (document.body.contains(app))     document.body.removeChild(app)
+      if (polyfill._appScript && document.body.contains(polyfill._appScript))
+        document.body.removeChild(polyfill._appScript)
       delete window.planity
     }
   }, [])
