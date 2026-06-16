@@ -74,29 +74,32 @@ export default function Termin() {
             padding: 1rem;
           }
 
-          #planity-container * {
+          #planitywl * {
             color: #1a1a1a !important;
           }
 
-          #planity-container h1,
-          #planity-container h2,
-          #planity-container h3,
-          #planity-container [class*="title"],
-          #planity-container [class*="name"],
-          #planity-container [class*="service"] {
+          #planitywl h3,
+          [class*="service_set-module_title"],
+          [class*="service_set_module_title"] {
             color: #0a0a0a !important;
-            font-weight: 600 !important;
             opacity: 1 !important;
           }
 
-          #planity-container button {
+          [class*="service_set-module_businessServices"],
+          [class*="services-module_servicesContainer"],
+          [class*="step-module_service"] {
+            color: #1a1a1a !important;
             opacity: 1 !important;
           }
 
-          #planity-container [class*="disabled"],
-          #planity-container [disabled] {
-            opacity: 0.5 !important;
-            color: #555555 !important;
+          [class*="isLimited"],
+          [class*="isCollapsed"] {
+            color: #333333 !important;
+            opacity: 1 !important;
+          }
+
+          .planityWidget * {
+            color: #1a1a1a !important;
           }
         `}</style>
       </div>
