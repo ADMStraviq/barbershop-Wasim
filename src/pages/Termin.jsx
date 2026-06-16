@@ -102,34 +102,35 @@ export default function Termin() {
             color: #1a1a1a !important;
           }
 
-          #planitywl button {
-            color: #ffffff !important;
+          /* Primary action buttons: dark fill */
+          #planitywl .button-module_primary-Careb {
             background-color: #1a1a1a !important;
-          }
-
-          #planitywl button * {
             color: #ffffff !important;
           }
 
-          #planitywl button span {
+          #planitywl .button-module_primary-Careb *,
+          #planitywl .button-module_primary-Careb span {
             color: #ffffff !important;
           }
 
-          #planitywl button[class*="delete"],
-          #planitywl button[class*="remove"],
-          #planitywl button[class*="löschen"],
-          #planitywl [class*="delete"] button,
-          #planitywl [class*="more"] button,
-          #planitywl [class*="availability"] button,
-          #planitywl [class*="weitere"] button {
+          /* Secondary and underlined buttons: transparent, outlined */
+          #planitywl .button-module_secondary-EQMHU,
+          #planitywl .button-module_underlined-H3lcl {
             background-color: transparent !important;
             border: 1px solid #1a1a1a !important;
             color: #1a1a1a !important;
           }
 
-          #planitywl button[class*="delete"] *,
-          #planitywl [class*="more"] button * {
+          #planitywl .button-module_secondary-EQMHU *,
+          #planitywl .button-module_secondary-EQMHU span,
+          #planitywl .button-module_underlined-H3lcl *,
+          #planitywl .button-module_underlined-H3lcl span {
             color: #1a1a1a !important;
+          }
+
+          /* Icon-only buttons: no background */
+          #planitywl .icon_button-module_iconButton-vWDjZ {
+            background-color: transparent !important;
           }
         `}</style>
       </div>
