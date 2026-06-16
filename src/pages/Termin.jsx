@@ -73,6 +73,31 @@ export default function Termin() {
             border-radius: 12px;
             padding: 1rem;
           }
+
+          #planity-container * {
+            color: #1a1a1a !important;
+          }
+
+          #planity-container h1,
+          #planity-container h2,
+          #planity-container h3,
+          #planity-container [class*="title"],
+          #planity-container [class*="name"],
+          #planity-container [class*="service"] {
+            color: #0a0a0a !important;
+            font-weight: 600 !important;
+            opacity: 1 !important;
+          }
+
+          #planity-container button {
+            opacity: 1 !important;
+          }
+
+          #planity-container [class*="disabled"],
+          #planity-container [disabled] {
+            opacity: 0.5 !important;
+            color: #555555 !important;
+          }
         `}</style>
       </div>
     </section>
