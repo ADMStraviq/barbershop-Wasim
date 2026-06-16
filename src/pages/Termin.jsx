@@ -114,6 +114,23 @@ export default function Termin() {
           #planitywl button span {
             color: #ffffff !important;
           }
+
+          #planitywl button[class*="delete"],
+          #planitywl button[class*="remove"],
+          #planitywl button[class*="löschen"],
+          #planitywl [class*="delete"] button,
+          #planitywl [class*="more"] button,
+          #planitywl [class*="availability"] button,
+          #planitywl [class*="weitere"] button {
+            background-color: transparent !important;
+            border: 1px solid #1a1a1a !important;
+            color: #1a1a1a !important;
+          }
+
+          #planitywl button[class*="delete"] *,
+          #planitywl [class*="more"] button * {
+            color: #1a1a1a !important;
+          }
         `}</style>
       </div>
     </section>
