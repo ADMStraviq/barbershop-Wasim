@@ -101,6 +101,19 @@ export default function Termin() {
           .planityWidget * {
             color: #1a1a1a !important;
           }
+
+          #planitywl button {
+            color: #ffffff !important;
+            background-color: #1a1a1a !important;
+          }
+
+          #planitywl button * {
+            color: #ffffff !important;
+          }
+
+          #planitywl button span {
+            color: #ffffff !important;
+          }
         `}</style>
       </div>
     </section>
