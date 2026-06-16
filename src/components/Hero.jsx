@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import config from '../config'
 
 function scrollTo(id) {
@@ -44,25 +45,13 @@ export default function Hero() {
         </div>
 
         {/* CTA */}
-        {config.bookingEnabled ? (
-          <button
-            onClick={() => scrollTo('booking')}
-            className="font-montserrat font-semibold text-xs tracking-[0.25em] uppercase transition-colors duration-300"
-            style={{ background: 'transparent', border: '1px solid #C9A84C', color: '#C9A84C', padding: '12px 28px' }}
-          >
-            Termin buchen
-          </button>
-        ) : (
-          <a
-            href={`https://wa.me/${config.whatsappNumber}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block font-montserrat font-semibold text-xs tracking-[0.25em] uppercase transition-colors duration-300"
-            style={{ background: 'transparent', border: '1px solid #C9A84C', color: '#C9A84C', padding: '12px 28px' }}
-          >
-            Per WhatsApp buchen
-          </a>
-        )}
+        <Link
+          to="/termin"
+          className="inline-block font-montserrat font-semibold text-xs tracking-[0.25em] uppercase transition-colors duration-300"
+          style={{ background: '#C9A84C', color: '#0A0A0A', padding: '12px 28px' }}
+        >
+          Termin buchen
+        </Link>
       </div>
 
       {/* Scroll indicator */}

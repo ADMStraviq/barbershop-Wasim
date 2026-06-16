@@ -1,9 +1,11 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const POLYFILL_SRC = 'https://d2skjte8udjqxw.cloudfront.net/widget/production/2/polyfills.latest.js'
 const APP_SRC     = 'https://d2skjte8udjqxw.cloudfront.net/widget/production/2/app.latest.js'
 
 export default function Termin() {
+  const [loading, setLoading] = useState(true)
+
   useEffect(() => {
     let active = true
 
@@ -22,6 +24,7 @@ export default function Termin() {
       if (!active) return
       const app = document.createElement('script')
       app.src = APP_SRC
+      app.onload = () => { if (active) setLoading(false) }
       document.body.appendChild(app)
       polyfill._appScript = app
     }
@@ -50,11 +53,27 @@ export default function Termin() {
           </h1>
         </div>
 
+        {/* Loading spinner */}
+        {loading && (
+          <div className="flex justify-center items-center min-h-[300px]">
+            <div className="w-10 h-10 border-4 border-gold border-t-transparent rounded-full animate-spin" />
+          </div>
+        )}
+
         {/* Planity widget */}
         <div
           id="planity-container"
-          className="min-h-[600px] w-full"
+          className={loading ? 'hidden' : 'min-h-[600px] w-full'}
         />
+
+        {/* Contrast fix for white Planity widget on dark background */}
+        <style>{`
+          #planity-container, #planity, #planitywl {
+            background: #ffffff !important;
+            border-radius: 12px;
+            padding: 1rem;
+          }
+        `}</style>
       </div>
     </section>
   )
