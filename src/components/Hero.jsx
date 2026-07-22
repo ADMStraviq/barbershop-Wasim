@@ -24,11 +24,6 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        {/* Eyebrow */}
-        <p className="text-xs tracking-[0.45em] uppercase font-montserrat text-gold mb-8" style={{ whiteSpace: 'nowrap' }}>
-          {config.tagline}
-        </p>
-
         {/* Headline */}
         <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-semibold leading-tight text-off-white mb-6">
           Die Kunst der{' '}
