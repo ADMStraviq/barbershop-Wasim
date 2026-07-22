@@ -23,9 +23,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-dark/65" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        {/* Headline + sub-heading — nudged down: ~0.3cm mobile, ~1cm from 768px up */}
-        <div className="mt-[11px] md:mt-[38px]">
+      {/* Shifted down via transform, not margin: the section is flex-centered, so
+          margin on a child grows the box and gets re-centered away (half the value). */}
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto translate-y-[31px] md:translate-y-[78px]">
+        <div>
           {/* Headline */}
           <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-semibold leading-tight text-off-white mb-6">
             Die Kunst der{' '}
