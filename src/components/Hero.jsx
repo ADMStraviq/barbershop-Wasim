@@ -24,16 +24,19 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        {/* Headline */}
-        <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-semibold leading-tight text-off-white mb-6">
-          Die Kunst der{' '}
-          <em className="italic text-gold">Präzision</em>
-        </h1>
+        {/* Headline + sub-heading — nudged down: ~0.3cm mobile, ~1cm from 768px up */}
+        <div className="mt-[11px] md:mt-[38px]">
+          {/* Headline */}
+          <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-semibold leading-tight text-off-white mb-6">
+            Die Kunst der{' '}
+            <em className="italic text-gold">Präzision</em>
+          </h1>
 
-        {/* Sub-heading */}
-        <p className="font-cormorant text-xl sm:text-2xl text-off-white/65 font-light tracking-wide mb-12 max-w-md mx-auto">
-          {config.shopName} &mdash; {config.city}
-        </p>
+          {/* Sub-heading */}
+          <p className="font-cormorant text-xl sm:text-2xl text-off-white/65 font-light tracking-wide mb-12 max-w-md mx-auto">
+            {config.shopName} &mdash; {config.city}
+          </p>
+        </div>
 
         {/* Ornament */}
         <div className="flex items-center justify-center gap-4 mb-12">
@@ -45,8 +48,8 @@ export default function Hero() {
         {/* CTA */}
         <Link
           to="/termin"
-          className="inline-block font-montserrat font-semibold text-xs tracking-[0.25em] uppercase transition-colors duration-300"
-          style={{ background: '#C9A84C', color: '#0A0A0A', padding: '12px 28px' }}
+          className="inline-block font-montserrat font-semibold text-[13.2px] tracking-[0.25em] uppercase transition-colors duration-300"
+          style={{ background: '#C9A84C', color: '#0A0A0A', padding: '13.2px 30.8px' }}
         >
           Termin buchen
         </Link>
