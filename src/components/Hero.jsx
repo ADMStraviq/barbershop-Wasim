@@ -11,11 +11,14 @@ export default function Hero() {
       id="hero"
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${config.heroImageUrl})` }}
-      />
+      {/* Background image — mobile below 768px, desktop at 768px and above */}
+      <style>{`
+        .hero-bg { background-image: url(${config.heroImageUrlMobile}); }
+        @media (min-width: 768px) {
+          .hero-bg { background-image: url(${config.heroImageUrl}); }
+        }
+      `}</style>
+      <div className="hero-bg absolute inset-0 bg-cover bg-center bg-no-repeat" />
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-dark/65" />
 

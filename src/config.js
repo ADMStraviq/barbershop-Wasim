@@ -7,6 +7,7 @@ const config = {
   city: "Chemnitz",
   zipCode: "09111",
   heroImageUrl: "/images/hero-new.png",
+  heroImageUrlMobile: "/images/hero-new-mobile.png",
   googleMapsEmbedUrl:
     "https://maps.google.com/maps?q=Rosenhof+1a,+09111+Chemnitz&t=&z=15&ie=UTF8&iwloc=&output=embed",
   openingHours: [
