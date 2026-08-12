@@ -102,12 +102,6 @@ const config = {
   bookingEnabled: false,
   bookingUrl: "https://cal.com/wasim-zino/termin",
 
-  // Hinweis bei pausierter Online-Terminbuchung (Modal + Banner auf /termin)
-  bookingNotice: {
-    heading: "Wichtiger Hinweis",
-    text: "Aufgrund hoher Auslastung nehmen wir aktuell keine Terminbuchungen über das Online-System entgegen. Bitte kontaktieren Sie uns für einen Termin direkt per WhatsApp oder telefonisch. Vielen Dank für Ihr Verständnis!",
-  },
-
   email: "kontakt@wasim-zino-barbershop.de",
 
   social: {
