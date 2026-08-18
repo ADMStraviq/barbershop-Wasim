@@ -14,7 +14,7 @@ export default function Footer() {
           </span>
 
           {/* Legal links */}
-          <div className="flex items-center gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
             <Link
               to="/impressum"
               className="text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/35 hover:text-gold transition-colors duration-300"
@@ -27,6 +27,13 @@ export default function Footer() {
             >
               Datenschutz
             </Link>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event('openCookieSettings'))}
+              className="bg-transparent border-0 p-0 cursor-pointer text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/35 hover:text-gold transition-colors duration-300"
+            >
+              Cookie-Einstellungen
+            </button>
           </div>
 
           {/* Copyright */}

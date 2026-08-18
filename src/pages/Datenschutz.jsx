@@ -6,7 +6,7 @@ export default function Datenschutz() {
           Datenschutzerklärung
         </h1>
         <p className="text-xs tracking-[0.35em] uppercase font-montserrat text-gold mb-16">
-          Stand: Juni 2026
+          Stand: August 2026
         </p>
 
         <div className="font-montserrat text-off-white/70 text-sm lg:text-base leading-relaxed space-y-14">
@@ -72,7 +72,13 @@ export default function Datenschutz() {
               </Link>
             </p>
             <p>
-              Speicherdauer: Server-Logfiles werden in der Regel nach 30 Tagen automatisch gelöscht.
+              Speicherdauer: Die Server-Logfiles werden durch den Hosting-Anbieter verwaltet und
+              gelöscht, sobald sie für die Gewährleistung eines sicheren und stabilen Betriebs nicht
+              mehr erforderlich sind.
+            </p>
+            <p>
+              Mit dem Hosting-Anbieter Vercel besteht eine Vereinbarung zur Auftragsverarbeitung
+              (Data Processing Agreement) gemäß den Anforderungen des Art. 28 DSGVO.
             </p>
           </Section>
 
@@ -84,10 +90,12 @@ export default function Datenschutz() {
               keine Einwilligung erteilt haben, werden diese Dienste nicht geladen. Ihre
               Einwilligungsentscheidung wird lokal in Ihrem Browser gespeichert (LocalStorage).
             </p>
-            <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), § 25 Abs. 1 TTDSG.</p>
+            <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), § 25 Abs. 1 TDDDG.</p>
             <p>
-              Widerruf: Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie die
-              Speicherdaten Ihres Browsers für diese Website löschen.
+              Widerruf: Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft
+              widerrufen. Nutzen Sie hierzu den Link &bdquo;Cookie-Einstellungen&ldquo; am Ende
+              dieser Seite (im Footer). Dort können Sie Ihre Einwilligung zurücknehmen; der
+              Cookie-Banner wird anschließend erneut angezeigt.
             </p>
           </Section>
 
@@ -170,11 +178,15 @@ export default function Datenschutz() {
               WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.
             </p>
             <p>
-              Wenn Sie den WhatsApp-Link anklicken, werden Sie zu WhatsApp weitergeleitet. Dabei
-              können Daten (z. B. Ihre Telefonnummer) an WhatsApp übertragen werden. Die weitere
-              Datenverarbeitung erfolgt nach den Datenschutzbestimmungen von WhatsApp.
+              Wenn Sie auf den WhatsApp-Link klicken, verlassen Sie unsere Website und werden zu
+              WhatsApp weitergeleitet. Erst durch diesen Klick erlangt WhatsApp Kenntnis Ihrer
+              IP-Adresse und ggf. weiterer Daten. Auf diese Datenverarbeitung haben wir keinen
+              Einfluss.
             </p>
-            <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Nutzung).</p>
+            <p>
+              Rechtsgrundlage für die Bereitstellung des Links ist unser berechtigtes Interesse an
+              einer einfachen und unkomplizierten Kontaktaufnahme (Art. 6 Abs. 1 lit. f DSGVO).
+            </p>
             <p>
               Weitere Informationen:{' '}
               <Link href="https://www.whatsapp.com/legal/privacy-policy-eea">

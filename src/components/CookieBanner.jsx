@@ -10,6 +10,17 @@ export default function CookieBanner() {
     }
   }, [])
 
+  // Widerruf der Einwilligung (Art. 7 Abs. 3 DSGVO) über den Footer-Link
+  useEffect(() => {
+    function reopen() {
+      localStorage.removeItem('cookieConsent')
+      setVisible(true)
+      window.dispatchEvent(new Event('cookieConsentChange'))
+    }
+    window.addEventListener('openCookieSettings', reopen)
+    return () => window.removeEventListener('openCookieSettings', reopen)
+  }, [])
+
   function accept() {
     localStorage.setItem('cookieConsent', 'accepted')
     setVisible(false)
