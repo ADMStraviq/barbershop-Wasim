@@ -68,25 +68,21 @@ const config = {
       {
         name: "Tarek",
         rating: 5,
-        date: "vor 8 Monaten",
         text: "Absolut empfehlenswert! Wasim ist nicht nur extrem präzise und professionell, sondern sorgt auch dafür, dass man sich sofort wohlfühlt. Jeder Schnitt sitzt perfekt, die Beratung ist top, und das Ergebnis übertrifft jedes Mal meine Erwartungen. Hier merkt man echte Leidenschaft fürs Handwerk – fünf Sterne sind einfach nur gerechtfertigt!"
       },
       {
         name: "Lea Kalke",
         rating: 5,
-        date: "vor einem Jahr",
         text: "Sehr empfehlenswert! Auch für mich als Frau eine super Erfahrung. Hier wird jeder herzlich empfangen. Das Personal ist extrem freundlich, die Arbeit schnell und präzise. Wasim weiß genau, was er tut, jeder Schnitt sitzt perfekt. Ich bin sehr zufrieden und überzeugt!"
       },
       {
         name: "Jannis Quaiser",
         rating: 5,
-        date: "vor 9 Monaten",
         text: "Bester Barbershop in Chemnitz. Abbas nimmt sich immer Zeit und schneidet die Haare mit Liebe zum Detail. Es gibt Getränke und es wird auf den Service gegenüber den Kunden geachtet. Top Leistung."
       },
       {
         name: "Ferenc Brendel",
         rating: 5,
-        date: "vor einem Jahr",
         text: "Dieser Barbershop ist nur zu empfehlen. Ich war jetzt schon öfter hier und war jedes Mal sehr zufrieden mit dem Ergebnis. Es wird sich viel Zeit für die Wünsche genommen und man fühlt sich direkt sehr wohl."
       }
     ]

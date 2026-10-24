@@ -38,7 +38,8 @@ function ReviewCard({ review }) {
         </div>
         <div className="flex-1 min-w-0">
           <p className="font-montserrat font-semibold text-off-white text-sm leading-tight">{review.name}</p>
-          <p className="text-xs text-gray-400 mt-0.5">{review.date}</p>
+          {/* Nur absolute Angaben wie "März 2026", relative veralten */}
+          {review.date && <p className="text-xs text-gray-400 mt-0.5">{review.date}</p>}
         </div>
       </div>
       <Stars count={review.rating} />
@@ -46,7 +47,7 @@ function ReviewCard({ review }) {
         className="text-off-white text-sm leading-relaxed"
         style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic' }}
       >
-        "{review.text}"
+        &bdquo;{review.text}&ldquo;
       </p>
     </div>
   )

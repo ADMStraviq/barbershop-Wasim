@@ -168,7 +168,7 @@ export default function Contact() {
               to="/termin"
               className="inline-flex items-center gap-3 bg-gold text-dark font-montserrat text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-gold/80 transition-all duration-300 w-fit"
             >
-              Online Termin buchen
+              Online-Termin buchen
             </Link>
 
             {/* WhatsApp CTA */}
@@ -258,7 +258,7 @@ export default function Contact() {
                     maxWidth: '260px',
                   }}
                 >
-                  Google Maps ist deaktiviert. Bitte akzeptiere die Cookies um die Karte
+                  Google Maps ist deaktiviert. Bitte akzeptieren Sie die Cookies, um die Karte
                   anzuzeigen.
                 </p>
                 <button
