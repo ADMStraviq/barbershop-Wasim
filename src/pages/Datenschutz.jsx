@@ -128,7 +128,7 @@ export default function Datenschutz() {
           <Section title="6. Online-Terminbuchung (Planity)">
             <p>
               Diese Website bietet eine Online-Terminbuchung über den Dienst Planity. Anbieter ist
-              Planity, 12 rue de la Chaussée d'Antin, 75009 Paris, Frankreich.
+              die Planity GmbH, Christophstraße 15–17, 50670 Köln, Deutschland.
             </p>
             <p>
               Bei Nutzung der Online-Terminbuchung werden folgende Daten an Planity übermittelt:
@@ -144,7 +144,11 @@ export default function Datenschutz() {
             />
             <p>
               Diese Daten werden von Planity zur Verwaltung Ihres Termins verarbeitet und
-              gespeichert. Mit Planity besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO.
+              gespeichert. Nach eigenen Angaben ist Planity für die meisten Verarbeitungsvorgänge
+              auf der Plattform selbst Verantwortlicher; bei bestimmten Verarbeitungsvorgängen ist
+              Planity gemeinsam mit den Anbietern verantwortlich, die ihre Dienste über Planity
+              anbieten. Informationen zur Vereinbarung über die gemeinsame Verantwortlichkeit
+              erteilt Planity unter kontakt@planity.com.
             </p>
             <p>
               Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung bzw. vorvertragliche
