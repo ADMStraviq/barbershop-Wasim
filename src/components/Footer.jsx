@@ -14,23 +14,23 @@ export default function Footer() {
           </span>
 
           {/* Legal links */}
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 -my-1.5">
             <Link
               to="/impressum"
-              className="text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/35 hover:text-gold transition-colors duration-300"
+              className="py-3.5 -my-2 text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/55 hover:text-gold transition-colors duration-300"
             >
               Impressum
             </Link>
             <Link
               to="/datenschutz"
-              className="text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/35 hover:text-gold transition-colors duration-300"
+              className="py-3.5 -my-2 text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/55 hover:text-gold transition-colors duration-300"
             >
               Datenschutz
             </Link>
             <button
               type="button"
               onClick={() => window.dispatchEvent(new Event('openCookieSettings'))}
-              className="bg-transparent border-0 p-0 cursor-pointer text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/35 hover:text-gold transition-colors duration-300"
+              className="bg-transparent border-0 px-0 py-3.5 -my-2 cursor-pointer text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/55 hover:text-gold transition-colors duration-300"
             >
               Cookie-Einstellungen
             </button>
@@ -38,16 +38,16 @@ export default function Footer() {
 
           {/* Copyright */}
           <div>
-            <p className="text-xs font-montserrat text-off-white/25">
+            <p className="text-xs font-montserrat text-off-white/50">
               &copy; {year} {config.shopName}
             </p>
-            <p style={{ fontSize: '11px', color: 'rgba(245,240,232,0.25)', textAlign: 'center', marginTop: '4px' }}>
+            <p style={{ fontSize: '11px', color: 'rgba(245,240,232,0.5)', textAlign: 'center', marginTop: '4px' }}>
               Website erstellt von{' '}
               <a
                 href="https://straviq-webdesign.de"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: 'rgba(245,240,232,0.25)', textDecoration: 'none' }}
+                style={{ color: 'rgba(245,240,232,0.5)', textDecoration: 'none', padding: '15px 0' }}
               >
                 STRAVIQ
               </a>

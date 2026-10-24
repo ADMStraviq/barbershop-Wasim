@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-screen flex items-center justify-center overflow-hidden"
+      className="relative h-screen h-svh flex items-center justify-center overflow-hidden"
     >
       {/* Background image — mobile below 768px, desktop at 768px and above.
           With bg-cover the drawn width is max(viewport width, 2.36 × height),

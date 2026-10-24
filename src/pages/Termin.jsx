@@ -35,7 +35,7 @@ export default function Termin() {
   }
 
   return (
-    <section className="min-h-screen bg-dark pt-32 pb-24 px-6">
+    <section className="min-h-screen min-h-svh bg-dark pt-32 pb-24 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -77,7 +77,7 @@ function PlanityPlaceholder({ onLoad }) {
             href={config.planityUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block py-3 font-montserrat text-xs text-off-white/70 underline underline-offset-4 hover:text-gold transition-colors duration-300"
+            className="inline-block py-3.5 font-montserrat text-xs text-off-white/70 underline underline-offset-4 hover:text-gold transition-colors duration-300"
           >
             Direkt bei Planity öffnen
           </a>

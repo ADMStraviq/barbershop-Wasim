@@ -92,12 +92,12 @@ const config = {
     ]
   },
   galleryImages: [
-    { url: "/images/IMG_8483.jpg", alt: "Wasim Zino Barbershop" },
-    { url: "/images/IMG_8484.jpg", alt: "Wasim Zino Barbershop" },
-    { url: "/images/IMG_8485.jpg", alt: "Wasim Zino Barbershop" },
-    { url: "/images/IMG_8486.jpg", alt: "Wasim Zino Barbershop" },
-    { url: "/images/IMG_8487.jpg", alt: "Wasim Zino Barbershop" },
-    { url: "/images/IMG_8488.jpg", alt: "Wasim Zino Barbershop" },
+    { url: "/images/IMG_8483.jpg", alt: "Barbier mit Brille schneidet einem Kunden im schwarzen Umhang die Haare mit Schere und Kamm" },
+    { url: "/images/IMG_8484.jpg", alt: "Drei Mitarbeiter in grauen Poloshirts vor dem Ladeneingang mit dem Schild „Friseurmeister Wasim Zino“" },
+    { url: "/images/IMG_8485.jpg", alt: "Herrenschnitt von hinten mit sauberem Übergang im Nacken" },
+    { url: "/images/IMG_8486.jpg", alt: "Junge im Profil mit kurzem Fade an den Seiten und locker gestyltem Deckhaar" },
+    { url: "/images/IMG_8487.jpg", alt: "Salon mit drei schwarzen Barberstühlen vor Spiegeln in Holzrahmen" },
+    { url: "/images/IMG_8488.jpg", alt: "Schwarze Visitenkarte mit dem Wasim-Zino-Logo auf einer Holzvitrine" },
   ],
 
   // bookingEnabled: false  →  Template A (WhatsApp CTA, no booking section)

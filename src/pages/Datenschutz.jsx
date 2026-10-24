@@ -2,7 +2,7 @@ import config from '../config'
 
 export default function Datenschutz() {
   return (
-    <section className="min-h-screen bg-dark py-32 px-6">
+    <section className="min-h-screen min-h-svh bg-dark py-32 px-6">
       <div className="max-w-[800px] mx-auto">
         <h1 className="font-playfair text-4xl lg:text-5xl font-semibold text-off-white mb-3">
           {/* Soft hyphen: the word is wider than narrow phones (up to 390px) */}

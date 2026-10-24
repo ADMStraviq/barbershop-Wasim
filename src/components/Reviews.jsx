@@ -38,7 +38,7 @@ function ReviewCard({ review }) {
         </div>
         <div className="flex-1 min-w-0">
           <p className="font-montserrat font-semibold text-off-white text-sm leading-tight">{review.name}</p>
-          <p className="text-xs text-gray-500 mt-0.5">{review.date}</p>
+          <p className="text-xs text-gray-400 mt-0.5">{review.date}</p>
         </div>
       </div>
       <Stars count={review.rating} />

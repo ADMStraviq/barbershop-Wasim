@@ -45,7 +45,8 @@ export default function CookieBanner() {
   if (!visible) return null
 
   return (
-    <div
+    <section
+      aria-label="Cookie-Hinweis"
       style={{
         position: 'fixed',
         bottom: 0,
@@ -54,7 +55,8 @@ export default function CookieBanner() {
         zIndex: 1000,
         background: '#111111',
         borderTop: '1px solid rgba(201,168,76,0.3)',
-        padding: '20px 24px',
+        // Abstand zur Home-Leiste auf iPhones (greift nur mit viewport-fit=cover)
+        padding: '20px 24px calc(20px + env(safe-area-inset-bottom, 0px))',
         display: 'flex',
         flexWrap: 'wrap',
         alignItems: 'center',
@@ -94,7 +96,8 @@ export default function CookieBanner() {
             fontSize: '12px',
             letterSpacing: '0.15em',
             textTransform: 'uppercase',
-            padding: '10px 20px',
+            lineHeight: '16px',
+            padding: '13px 20px',
             cursor: 'pointer',
           }}
         >
@@ -110,7 +113,8 @@ export default function CookieBanner() {
             fontSize: '12px',
             letterSpacing: '0.15em',
             textTransform: 'uppercase',
-            padding: '10px 20px',
+            lineHeight: '16px',
+            padding: '13px 20px',
             cursor: 'pointer',
             fontWeight: 600,
           }}
@@ -118,6 +122,6 @@ export default function CookieBanner() {
           Akzeptieren
         </button>
       </div>
-    </div>
+    </section>
   )
 }

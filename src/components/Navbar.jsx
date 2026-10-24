@@ -53,7 +53,7 @@ export default function Navbar() {
             <li key={link.target}>
               <button
                 onClick={() => scrollTo(link.target)}
-                className="text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/60 hover:text-gold transition-colors duration-300"
+                className="py-3.5 text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/60 hover:text-gold transition-colors duration-300"
               >
                 {link.label}
               </button>
@@ -71,9 +71,11 @@ export default function Navbar() {
 
         {/* Hamburger */}
         <button
+          type="button"
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden flex flex-col justify-center gap-[6px] w-8 h-8"
-          aria-label="Menü öffnen"
+          className="lg:hidden flex flex-col justify-center items-center gap-[6px] w-11 h-11"
+          aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'}
+          aria-expanded={menuOpen}
         >
           <span
             className={`block w-6 h-px bg-off-white origin-center transition-all duration-300 ${
@@ -99,22 +101,22 @@ export default function Navbar() {
           menuOpen ? 'max-h-96' : 'max-h-0'
         }`}
       >
-        <ul className="flex flex-col px-6 py-8 gap-7">
+        <ul className="flex flex-col px-6 py-[22px] gap-2">
           {navLinks.map((link) => (
             <li key={link.target}>
               <button
                 onClick={() => closeAndScroll(link.target)}
-                className="text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/60 hover:text-gold transition-colors duration-300"
+                className="py-3.5 text-xs tracking-[0.2em] uppercase font-montserrat text-off-white/60 hover:text-gold transition-colors duration-300"
               >
                 {link.label}
               </button>
             </li>
           ))}
-          <li className="pt-2">
+          <li className="pt-4">
             <Link
               to="/termin"
               onClick={() => setMenuOpen(false)}
-              className="inline-block bg-gold text-dark text-xs tracking-[0.2em] uppercase font-montserrat px-7 py-3 hover:bg-gold/80 transition-all duration-300"
+              className="inline-block bg-gold text-dark text-xs tracking-[0.2em] uppercase font-montserrat px-7 py-3.5 hover:bg-gold/80 transition-all duration-300"
             >
               Termin buchen
             </Link>

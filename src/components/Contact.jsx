@@ -135,7 +135,7 @@ export default function Contact() {
               </p>
               <a
                 href={config.phoneHref}
-                className="font-cormorant text-2xl text-off-white hover:text-gold transition-colors duration-300"
+                className="inline-block py-1.5 -my-1.5 font-cormorant text-2xl text-off-white hover:text-gold transition-colors duration-300"
               >
                 {config.phone}
               </a>
@@ -252,7 +252,7 @@ export default function Contact() {
                 <p
                   className="text-center font-montserrat"
                   style={{
-                    color: 'rgba(245,241,232,0.4)',
+                    color: 'rgba(245,241,232,0.6)',
                     fontSize: '13px',
                     lineHeight: '1.7',
                     maxWidth: '260px',
