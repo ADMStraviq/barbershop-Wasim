@@ -104,6 +104,8 @@ const config = {
   // bookingEnabled: true   →  Template B (booking button + embedded calendar)
   bookingEnabled: false,
   bookingUrl: "https://cal.com/wasim-zino/termin",
+  // Profil bei Planity, Alternative zum eingebetteten Widget auf /termin
+  planityUrl: "https://www.planity.com/de-DE/wasim-zino-barbershop-09111-chemnitz",
 
   email: "kontakt@wasim-zino-barbershop.de",
 
