@@ -2,6 +2,7 @@ const config = {
   shopName: "Wasim Zino Barbershop",
   tagline: "Premium Barbershop · Chemnitz",
   phone: "+49 176 43655325",
+  phoneHref: "tel:+4917643655325",
   whatsappNumber: "4917643655325",
   address: "Rosenhof 1a",
   city: "Chemnitz",
@@ -59,7 +60,7 @@ const config = {
   servicesNote: "Alle Preise können je nach Haarlänge, Haarmenge und Aufwand variieren.",
   reviews: {
     rating: 5.0,
-    count: 419,
+    count: 428,
     platform: "Google",
     items: [
       {

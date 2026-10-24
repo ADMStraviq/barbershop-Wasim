@@ -1,3 +1,5 @@
+import config from '../config'
+
 export default function Impressum() {
   return (
     <section className="min-h-screen bg-dark py-32 px-6">
@@ -22,7 +24,7 @@ export default function Impressum() {
           </Block>
 
           <Block label="Kontakt">
-            <p>Telefon: +49-176-43-655-325</p>
+            <p>Telefon: <a href={config.phoneHref}>{config.phone}</a></p>
             <p>E-Mail: kontakt@wasim-zino-barbershop.de</p>
           </Block>
 

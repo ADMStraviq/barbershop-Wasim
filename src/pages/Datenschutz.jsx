@@ -1,3 +1,5 @@
+import config from '../config'
+
 export default function Datenschutz() {
   return (
     <section className="min-h-screen bg-dark py-32 px-6">
@@ -18,7 +20,7 @@ export default function Datenschutz() {
             <p>
               Wasim Zino, Rosenhof 1a, 09111 Chemnitz, Deutschland
               <br />
-              Telefon: 0371 69577966
+              Telefon: <a href={config.phoneHref}>{config.phone}</a>
               <br />
               E-Mail: kontakt@wasim-zino-barbershop.de
             </p>

@@ -128,7 +128,7 @@ export default function Contact() {
                 Telefon
               </p>
               <a
-                href={`tel:${config.phone}`}
+                href={config.phoneHref}
                 className="font-cormorant text-2xl text-off-white hover:text-gold transition-colors duration-300"
               >
                 {config.phone}
@@ -216,7 +216,7 @@ export default function Contact() {
                 <EmailIcon />
               </SocialButton>
               <SocialButton
-                href="tel:+4917643655325"
+                href={config.phoneHref}
                 label="Telefon"
                 target="_self"
                 style={{ background: '#333333' }}
