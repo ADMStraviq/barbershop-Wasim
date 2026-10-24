@@ -11,10 +11,16 @@ export default function Hero() {
       id="hero"
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background image — mobile below 768px, desktop at 768px and above */}
+      {/* Background image — mobile below 768px, desktop at 768px and above.
+          With bg-cover the drawn width is max(viewport width, 2.36 × height),
+          so the 1600px file is only used for small, low-density windows.
+          The same media queries are used for the preloads in index.html. */}
       <style>{`
         .hero-bg { background-image: url(${config.heroImageUrlMobile}); }
         @media (min-width: 768px) {
+          .hero-bg { background-image: url(${config.heroImageUrlMedium}); }
+        }
+        @media (min-width: 1601px), (min-width: 768px) and (min-height: 681px), (min-width: 768px) and (min-resolution: 1.5dppx) {
           .hero-bg { background-image: url(${config.heroImageUrl}); }
         }
       `}</style>
