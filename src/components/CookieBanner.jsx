@@ -21,6 +21,15 @@ export default function CookieBanner() {
     return () => window.removeEventListener('openCookieSettings', reopen)
   }, [])
 
+  // Zustimmung über „Karte laden“ im Kontaktbereich schließt den Banner
+  useEffect(() => {
+    function sync() {
+      setVisible(!localStorage.getItem('cookieConsent'))
+    }
+    window.addEventListener('cookieConsentChange', sync)
+    return () => window.removeEventListener('cookieConsentChange', sync)
+  }, [])
+
   function accept() {
     localStorage.setItem('cookieConsent', 'accepted')
     setVisible(false)
@@ -63,15 +72,15 @@ export default function CookieBanner() {
           flex: '1 1 300px',
         }}
       >
-        Wir verwenden Google Maps zur Standortanzeige. Mit der Nutzung dieser Website stimmen Sie
-        unserer{' '}
+        Wir verwenden Google Maps zur Standortanzeige. Google Maps wird erst nach Ihrer Zustimmung
+        geladen. Mehr dazu in der{' '}
         <Link
           to="/datenschutz"
           style={{ color: '#C9A84C', textDecoration: 'underline' }}
         >
           Datenschutzerklärung
-        </Link>{' '}
-        zu.
+        </Link>
+        .
       </p>
 
       <div style={{ display: 'flex', gap: '12px', flexShrink: 0 }}>

@@ -9,7 +9,7 @@ export default function Datenschutz() {
           Datenschutz&shy;erklärung
         </h1>
         <p className="text-xs tracking-[0.35em] uppercase font-montserrat text-gold mb-16">
-          Stand: August 2026
+          Stand: Oktober 2026
         </p>
 
         <div className="font-montserrat text-off-white/70 text-sm lg:text-base leading-relaxed space-y-14">
@@ -154,10 +154,40 @@ export default function Datenschutz() {
               Speicherdauer: Die Daten werden so lange gespeichert, wie es für die Terminverwaltung
               erforderlich ist und gesetzliche Aufbewahrungsfristen bestehen.
             </p>
+
+            <SubTitle>Laden des Buchungs-Widgets</SubTitle>
+            <p>
+              Das Buchungs-Widget von Planity wird auf der Seite &bdquo;Termin buchen&ldquo; nicht
+              automatisch geladen. Erst wenn Sie auf &bdquo;Terminbuchung laden&ldquo; klicken, stellt
+              Ihr Browser eine Verbindung zu Servern von Planity und dessen Dienstleistern her.
+              Anbieter des Widgets ist die Planity GmbH, Christophstraße 15–17, 50670 Köln,
+              Deutschland.
+            </p>
+            <p>Beim Laden des Widgets werden insbesondere folgende Daten übertragen:</p>
+            <List
+              items={[
+                'IP-Adresse des aufrufenden Geräts',
+                'Datum und Uhrzeit des Zugriffs',
+                'Browsertyp, Browserversion und Betriebssystem',
+                'Adresse der aufrufenden Seite',
+              ]}
+            />
+            <p>
+              Planity setzt dafür Dienstleister ein, unter anderem Amazon CloudFront (Auslieferung
+              des Widgets), Google Firebase (Datenbank und Anmeldung) und Algolia (Suche). Diese
+              Server können sich auch in den USA befinden; eine Übermittlung in Drittländer ist
+              daher nicht auszuschließen.
+            </p>
+            <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), § 25 Abs. 1 TDDDG.</p>
+            <p>
+              Ihre Entscheidung wird nur für die aktuelle Sitzung in Ihrem Browser gespeichert
+              (SessionStorage) und beim Schließen des Browserfensters gelöscht. Alternativ können Sie
+              Ihren Termin direkt auf der Website von Planity buchen.
+            </p>
             <p>
               Datenschutzerklärung von Planity:{' '}
-              <Link href="https://www.planity.com/de/datenschutzerklarung">
-                https://www.planity.com/de/datenschutzerklarung
+              <Link href="https://www.planity.com/de-DE/privacy-policy">
+                https://www.planity.com/de-DE/privacy-policy
               </Link>
             </p>
           </Section>

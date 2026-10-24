@@ -91,6 +91,12 @@ function useConsentState() {
   return consent
 }
 
+// Gleiche Zustimmung wie „Akzeptieren“ im Cookie-Banner
+function loadMap() {
+  localStorage.setItem('cookieConsent', 'accepted')
+  window.dispatchEvent(new Event('cookieConsentChange'))
+}
+
 export default function Contact() {
   const consent = useConsentState()
 
@@ -240,7 +246,7 @@ export default function Contact() {
               />
             ) : (
               <div
-                className="w-full h-full flex items-center justify-center"
+                className="w-full h-full flex flex-col items-center justify-center gap-6 px-6"
                 style={{ background: '#111111' }}
               >
                 <p
@@ -255,6 +261,13 @@ export default function Contact() {
                   Google Maps ist deaktiviert. Bitte akzeptiere die Cookies um die Karte
                   anzuzeigen.
                 </p>
+                <button
+                  type="button"
+                  onClick={loadMap}
+                  className="border border-gold text-gold font-montserrat text-xs tracking-[0.2em] uppercase px-8 py-4 hover:bg-gold hover:text-dark transition-colors duration-300"
+                >
+                  Karte laden
+                </button>
               </div>
             )}
           </div>

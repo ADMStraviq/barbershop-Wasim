@@ -9,7 +9,7 @@ export default function Impressum() {
         </h1>
 
         <div className="space-y-12">
-          <Block label="Angaben gemäß § 5 TMG">
+          <Block label="Angaben gemäß § 5 DDG">
             <p>Wasim Zino</p>
           </Block>
 
@@ -33,7 +33,7 @@ export default function Impressum() {
             <p>wird nachgereicht</p>
           </Block>
 
-          <Block label="Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV">
+          <Block label="Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV">
             <p>Wasim Zino</p>
             <p>Rosenhof 1a, 09111 Chemnitz</p>
           </Block>
