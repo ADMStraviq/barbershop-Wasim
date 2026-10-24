@@ -11,10 +11,12 @@ import Impressum from './pages/Impressum'
 import Datenschutz from './pages/Datenschutz'
 import Termin from './pages/Termin'
 import CookieBanner from './components/CookieBanner'
+import Seo from './components/Seo'
 
 export default function App() {
   return (
     <>
+    <Seo />
     <CookieBanner />
     <Routes>
       <Route
