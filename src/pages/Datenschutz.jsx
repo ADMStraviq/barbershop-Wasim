@@ -5,7 +5,8 @@ export default function Datenschutz() {
     <section className="min-h-screen bg-dark py-32 px-6">
       <div className="max-w-[800px] mx-auto">
         <h1 className="font-playfair text-4xl lg:text-5xl font-semibold text-off-white mb-3">
-          Datenschutzerklärung
+          {/* Soft hyphen: the word is wider than narrow phones (up to 390px) */}
+          Datenschutz&shy;erklärung
         </h1>
         <p className="text-xs tracking-[0.35em] uppercase font-montserrat text-gold mb-16">
           Stand: August 2026

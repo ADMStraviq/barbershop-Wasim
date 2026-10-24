@@ -110,7 +110,7 @@ export default function Services() {
                           fontSize: '14px',
                           fontFamily: "'Montserrat', sans-serif",
                           color: '#F5F0E8',
-                          whiteSpace: 'nowrap',
+                          minWidth: 0,
                         }}>
                           {item.name}
                         </span>
